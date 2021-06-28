@@ -244,25 +244,25 @@
                     <div class="counter_section_inner">
                         <div class="counter_item">
                             <div class="counter_item_inner">
-                                <strong>20k</strong>
+                                <strong><span class="counter">400</span><span>K</span></strong>
                                 <span>happy clients</span>
                             </div>
                         </div>
                         <div class="counter_item">
                             <div class="counter_item_inner">
-                                <strong>50k</strong>
+                                <strong><span class="counter">600</span><span>K</span></strong>
                                 <span>project completed</span>
                             </div>
                         </div>
                         <div class="counter_item">
                             <div class="counter_item_inner">
-                                <strong>550k</strong>
+                                <strong><span class="counter">500</span><span>K</span></strong>
                                 <span>professionals</span>
                             </div>
                         </div>
                         <div class="counter_item">
                             <div class="counter_item_inner">
-                                <strong>10+</strong>
+                                <strong><span class="counter">10</span><span>+</span></strong>
                                 <span>best awards</span>
                             </div>
                         </div>
@@ -504,23 +504,24 @@
                 <p>&copy; Made by <a href="#">Md Zahirul Islam</a></p>
             </div>
         </footer>
-        <!-- mixitup -->
+        <!-- js cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
         <script>
             var mixer = mixitup('.protfolio_image_inner');
             var typed = new Typed('.typed', {
-                strings: [
-                    'These are the default values...',
-                     'You know what you should do?', 
-                     'Use your own!',
-                    'Have a great day!',
-                     ],
-                     loop:true,
-                     typeSpeed: 60,
-                     backSpeed: 60,
-                     startDelay: 60,
+                strings: ['These are the default values...', 'You know what you should do?', 'Use your own!', 'Have a great day!'],
+                loop: true,
+                typeSpeed: 60,
+                backSpeed: 60,
+                startDelay: 60,
+            });
+            $('.counter').counterUp({
+                delay: 60,
+                time: 1500,
             });
         </script>
     </body>

@@ -449,6 +449,9 @@ header {
                 font-weight: 700;
                 font-size: 2.5rem;
                 text-align: center;
+                span{
+                    display: inline-block;
+                }
             }
             span {
                 display: block;
@@ -462,7 +465,7 @@ header {
 }
 /*============== (~ skill_section ~) =================*/
 .education_section {
-    padding: 100px 0;
+    padding: 100px 0 0 0;
     background: #fafafa;
     .section_title {
         @include section_title();

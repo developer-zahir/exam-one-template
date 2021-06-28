@@ -597,6 +597,10 @@ header .header_content a:hover {
   text-align: center;
 }
 
+.counter_section .counter_item .counter_item_inner strong span {
+  display: inline-block;
+}
+
 .counter_section .counter_item .counter_item_inner span {
   display: block;
   text-align: center;
@@ -607,7 +611,7 @@ header .header_content a:hover {
 
 /*============== (~ skill_section ~) =================*/
 .education_section {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
   background: #fafafa;
   overflow: auto;
 }
