@@ -29,16 +29,7 @@
                             <li><a href="#">home</a></li>
                             <li><a href="#">about me</a></li>
                             <li><a href="#">protfolio</a></li>
-                            <li>
-                                <a href="#">skills</a>
-                                <ul>
-                                    <li><a href="#">dropdown</a></li>
-                                    <li><a href="#">dropdown</a></li>
-                                    <li><a href="#">dropdown</a></li>
-                                    <li><a href="#">dropdown</a></li>
-                                    <li><a href="#">dropdown</a></li>
-                                </ul>
-                            </li>
+                            <li> <a href="#">skills</a> </li>
                             <li><a href="#">education</a></li>
                             <li><a href="#">clients</a></li>
                             <li><a href="#">hire me</a></li>
@@ -48,7 +39,7 @@
             </div>
             <div class="header_content">
                 <div class="header_content_inner">
-                    <img src="assets/image/lfwf logo.png" alt="" />
+                    <img src="assets/image/header_png.png" alt="" />
                     <h1>I love to develope.</h1>
                     <h5>ux designer . fronted developer . photographer</h5>
                     <a href="#">view my portfolio</a>
@@ -95,17 +86,17 @@
                     <div class="protfolio_contriler">
                         <div class="controlar_inner">
                             <ul>
-                                <li><button>All</button></li>
-                                <li><button>web design</button></li>
-                                <li><button>web development</button></li>
-                                <li><button>logo design</button></li>
-                                <li><button>branding</button></li>
+                                <li><button  data-filter="all" >All</button></li>
+                                <li><button data-filter=".web_design">web design</button></li>
+                                <li><button data-filter=".web_development">web development</button></li>
+                                <li><button  data-filter=".logo_design">logo design</button></li>
+                                <li><button  data-filter=".branding">branding</button></li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="protfolio_image_inner clear">
-                        <div class="protfolio_item">
+                        <div class="protfolio_item  mix branding">
                             <div class="protfolio_item_inner">
                                 <div class="hover">
                                     <span><i class="fas fa-plus"></i></span>
@@ -115,7 +106,7 @@
                                 <a href="#"> <img src="assets/image/ia_100000009.jpg" alt="" /></a>
                             </div>
                         </div>
-                        <div class="protfolio_item">
+                        <div class="protfolio_item mix logo_design branding web_design">
                             <div class="protfolio_item_inner">
                                 <div class="hover">
                                     <span><i class="fas fa-plus"></i></span>
@@ -125,7 +116,7 @@
                                 <a href="#"> <img src="assets/image/ia_100000010.jpg" alt="" /></a>
                             </div>
                         </div>
-                        <div class="protfolio_item">
+                        <div class="protfolio_item mix web_development">
                             <div class="protfolio_item_inner">
                                 <div class="hover">
                                     <span><i class="fas fa-plus"></i></span>
@@ -135,7 +126,7 @@
                                 <a href="#"> <img src="assets/image/ia_100000011.jpg" alt="" /></a>
                             </div>
                         </div>
-                        <div class="protfolio_item">
+                        <div class="protfolio_item mix branding logo_design">
                             <div class="protfolio_item_inner">
                                 <div class="hover">
                                     <span><i class="fas fa-plus"></i></span>
@@ -145,7 +136,7 @@
                                 <a href="#"> <img src="assets/image/ia_100000012.jpg" alt="" /></a>
                             </div>
                         </div>
-                        <div class="protfolio_item">
+                        <div class="protfolio_item mix web_development web_design">
                             <div class="protfolio_item_inner">
                                 <div class="hover">
                                     <span><i class="fas fa-plus"></i></span>
@@ -155,7 +146,7 @@
                                 <a href="#"> <img src="assets/image/ia_100000013.jpg" alt="" /></a>
                             </div>
                         </div>
-                        <div class="protfolio_item">
+                        <div class="protfolio_item mix  web_development">
                             <div class="protfolio_item_inner">
                                 <div class="hover">
                                     <span><i class="fas fa-plus"></i></span>
@@ -503,5 +494,10 @@
             <p>&copy; Made by <a href="#">Md Zahirul Islam</a></p>
            </div>
         </footer>
+        <!-- mixitup -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+        <script>
+            var mixer = mixitup('.protfolio_image_inner');
+        </script>
     </body>
 </html>
