@@ -60,7 +60,8 @@ header {
     background: url(../image/herobg.jpg);
     background-repeat: no-repeat;
     background-position: 100% 100%;
-    background-size: contain;
+    background-size: cover;
+    background-position: center center ;
     nav {
         display: flex;
         justify-content: space-between;
@@ -98,6 +99,7 @@ header {
     }
     .header_content {
         height: 92vh;
+        width: 90%;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -111,32 +113,19 @@ header {
         h1 {
             font-weight: 700;
             color: #fff;
-            font-size: 65px;
+            font-size: 60px;
             margin-bottom: 15px;
         }
         h5 {
             color: #fff;
             font-size: 20px;
             font-weight: 600;
-            position: relative;
-            &::before {
-                content: '';
-                width: 100px;
-                height: 1px;
-                background: #fff;
-                position: absolute;
-                left: -40px;
-                top: 11px;
+            position: relative !important;
+            display: block;
+            p{
+                display: inline-block;
             }
-            &::after {
-                content: '';
-                width: 100px;
-                height: 1px;
-                background: #fff;
-                position: absolute;
-                right: -40px;
-                top: 11px;
-            }
+           
         }
         a {
             display: inline-block;
@@ -153,6 +142,7 @@ header {
                 color: #ec116d;
                 background: #fff;
             }
+           
         }
     }
 }

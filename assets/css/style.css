@@ -34,7 +34,8 @@ header {
   background: url(../image/herobg.jpg);
   background-repeat: no-repeat;
   background-position: 100% 100%;
-  background-size: contain;
+  background-size: cover;
+  background-position: center center;
 }
 
 header nav {
@@ -83,6 +84,7 @@ header nav .nav_right > ul li a:hover {
 
 header .header_content {
   height: 92vh;
+  width: 90%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,7 +110,7 @@ header .header_content img {
 header .header_content h1 {
   font-weight: 700;
   color: #fff;
-  font-size: 65px;
+  font-size: 60px;
   margin-bottom: 15px;
 }
 
@@ -116,27 +118,12 @@ header .header_content h5 {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
-  position: relative;
+  position: relative !important;
+  display: block;
 }
 
-header .header_content h5::before {
-  content: '';
-  width: 100px;
-  height: 1px;
-  background: #fff;
-  position: absolute;
-  left: -40px;
-  top: 11px;
-}
-
-header .header_content h5::after {
-  content: '';
-  width: 100px;
-  height: 1px;
-  background: #fff;
-  position: absolute;
-  right: -40px;
-  top: 11px;
+header .header_content h5 p {
+  display: inline-block;
 }
 
 header .header_content a {
