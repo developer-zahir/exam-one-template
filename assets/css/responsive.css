@@ -77,7 +77,137 @@
   }
 }
 
+#mobile__menu,
+#mobile__menu__controler {
+  display: none;
+}
+
 @media all and (max-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+  #mobile__menu__controler {
+    display: block;
+    display: inline-block;
+    background: #d61063;
+    width: 40px;
+    margin-right: 30px;
+    height: 40px;
+    cursor: pointer;
+  }
+  #mobile__menu__controler label {
+    display: block;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  #mobile__menu__controler label::before {
+    content: '\f00d';
+    font-family: 'font awesome 5 free';
+    font-weight: 600;
+    position: absolute;
+    color: #fff;
+    font-size: 1.5rem;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #mobile__menu__controler label::after {
+    content: '\f0c9';
+    font-family: 'font awesome 5 free';
+    font-weight: 600;
+    position: absolute;
+    color: #fff;
+    font-size: 1.5rem;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  #mobile__menu:checked ~ .nav_right {
+    visibility: visible;
+    opacity: 1;
+    height: 68vh;
+  }
+  #mobile__menu:checked + #mobile__menu__controler label::before {
+    opacity: 1;
+    visibility: visible;
+  }
+  #mobile__menu:checked + #mobile__menu__controler label::after {
+    opacity: 0;
+    visibility: hidden;
+  }
+  header {
+    padding-top: 0 !important;
+  }
+  header .container {
+    width: 100%;
+  }
+  header nav {
+    position: relative !important;
+    background: #ec116d;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.623);
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav .nav_left {
+    margin-left: 30px;
+  }
+  header nav .nav_left img {
+    width: 70px !important;
+    margin-top: 5px;
+  }
+  header nav .nav_right {
+    position: absolute;
+    top: 101%;
+    left: 0;
+    width: 100%;
+    background: #d61063;
+    z-index: 33;
+    padding: 10px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    height: 0;
+  }
+  header nav .nav_right ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav .nav_right ul li {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 3px;
+  }
+  header nav .nav_right ul li a {
+    padding: 0 10px;
+  }
+  header nav .nav_right ul li:hover {
+    background: #ec116d;
+  }
   .about_section .about_section_main {
     display: block;
   }
@@ -301,9 +431,6 @@
     display: block;
     margin: 10px auto;
   }
-  nav {
-    display: none !important;
-  }
 }
 
 @media all and (max-width: 672px) {
@@ -500,11 +627,11 @@
   .about_section .about_section_main .about_section_right p {
     line-height: 20px;
     text-align: justify;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .about_section .about_section_main .about_section_right ul li {
     line-height: 25px;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .about_section .about_section_main .about_section_right ul li span {
     width: 120px;
@@ -518,8 +645,17 @@
   .about_section .about_section_main .about_section_right a {
     padding: 8px;
   }
+  #mobile__menu:checked ~ .nav_right {
+    height: 45vh !important;
+  }
+  header nav .nav_right ul li {
+    padding: 9px;
+  }
+  header nav .nav_right ul li a {
+    font-size: .9rem;
+  }
   header .header_content {
-    height: 55vh;
+    height: 45vh;
     width: 100%;
     margin: 0 !important;
     display: -webkit-box;
