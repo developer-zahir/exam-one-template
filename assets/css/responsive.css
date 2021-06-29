@@ -1,12 +1,556 @@
+.about_section .about_section_main .about_section_right {
+  padding: 30px 21px 30px 46px;
+}
+
 @media all and (max-width: 1472px) {
   .container {
     width: 1224px;
   }
 }
 
+@media all and (max-width: 1400px) {
+  .about_section .about_section_main .about_section_left {
+    width: 40%;
+    height: 753px;
+  }
+  .about_section .about_section_main .about_section_left img {
+    height: 100%;
+  }
+}
+
 @media all and (max-width: 1384px) {
   .container {
     width: 1144px;
+  }
+  .protfolio_section .protfolio_image_inner .protfolio_item .protfolio_item_inner {
+    height: 369px;
+  }
+}
+
+@media all and (max-width: 1241px) {
+  .container {
+    width: 87%;
+  }
+}
+
+@media all and (max-width: 1214px) {
+  .employment_section .employment_section_main .employment_item .employ_item_inner {
+    padding: 30px 19px;
+    margin: 20px 10px;
+  }
+  .protfolio_section .protfolio_image_inner .protfolio_item .protfolio_item_inner {
+    height: 320px;
+  }
+  .employment_section .employment_section_main {
+    overflow: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .employment_section .employment_section_main .employment_item {
+    float: inherit;
+  }
+}
+
+@media all and (max-width: 1146px) {
+  html {
+    font-size: 15px;
+  }
+  .about_section .about_section_main .about_section_right h2 {
+    line-height: 31px;
+    margin-bottom: 7px;
+  }
+  .about_section .about_section_main .about_section_right p {
+    line-height: 24px;
+  }
+  .about_section .about_section_main .about_section_right ul li {
+    line-height: 25px;
+  }
+  .about_section .about_section_main .about_section_right {
+    padding: 36px 21px 30px 21px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .about_section .about_section_main {
+    display: block;
+  }
+  .about_section .about_section_main .about_section_left {
+    width: 100%;
+    height: 753px;
+  }
+  .about_section .about_section_main .about_section_right {
+    width: 100%;
+  }
+  .about_section .about_section_main .about_section_left {
+    width: 74%;
+    height: 655px;
+    text-align: center;
+    margin: 64px auto;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .about_section .about_section_main .about_section_right {
+    width: 83%;
+    margin: auto;
+    padding-top: 0;
+    padding-bottom: 55px;
+  }
+  .protfolio_section .protfolio_image_inner .protfolio_item {
+    width: 50%;
+  }
+  .skill_section .skill_section_inner .skill_item {
+    width: 50%;
+  }
+  .education_section .education_section_inner .education_section_right {
+    display: none;
+  }
+  .education_section {
+    padding-bottom: 100px;
+  }
+  .education_section .education_section_inner .education_section_left {
+    width: 100%;
+    display: block;
+  }
+  .education_section .education_section_inner .education_section_left .education_item {
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .education_section .education_section_inner .education_section_left .education_item .education_item_inner {
+    padding: 20px;
+    display: block;
+    margin: 10px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 20px #ddd;
+            box-shadow: 0 0 20px #ddd;
+  }
+  .education_section .education_section_inner .education_section_left .education_item .education_item_inner .education_item_left {
+    display: block;
+    width: 100%;
+  }
+  .education_section .education_section_inner .education_section_left .education_item .education_item_inner .education_item_left h3 {
+    font-size: 1.5rem;
+  }
+  .education_section .education_section_inner .education_section_left .education_item .education_item_inner .education_item_right {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .employment_section .employment_section_main {
+    display: block !important;
+    width: 100%;
+  }
+  .employment_section .employment_section_main .employment_item {
+    width: 50% !important;
+    float: left;
+  }
+  .education_section .education_section_inner .education_section_left .education_item .education_item_inner .education_item_right p {
+    font-size: 0.9rem;
+    line-height: 20px;
+  }
+  header .header_content h1 {
+    font-size: 40px;
+  }
+  header .header_content {
+    height: 68vh;
+  }
+  .about_section .about_section_main .about_section_left {
+    width: 84%;
+    height: 486px;
+    text-align: center;
+    margin: 64px auto;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
+
+@media all and (max-width: 774px) {
+  .section_title {
+    text-align: left;
+    width: 75% !important;
+    margin-bottom: 80px;
+  }
+}
+
+@media all and (max-width: 692px) {
+  header .header_content h1 {
+    font-size: 27px;
+  }
+  header .header_content h5 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  header .header_content a {
+    font-weight: 500;
+    padding: 10px 19px;
+    margin-top: 19px;
+  }
+  .protfolio_section .protfolio_image_inner .protfolio_item {
+    width: 100%;
+  }
+  .protfolio_section .protfolio_image_inner .protfolio_item .protfolio_item_inner {
+    margin: 10px 30px;
+  }
+  .skill_section .skill_section_inner {
+    margin-top: 10px;
+    overflow: auto;
+  }
+  .skill_section .skill_section_inner .skill_item {
+    width: 100%;
+  }
+  .education_item {
+    width: 100% !important;
+  }
+  .employment_section .employment_section_main .employment_item {
+    width: 100% !important;
+  }
+  .company_logo_section .row__two .row__two_logo__item img {
+    max-width: 90%;
+  }
+  .company_logo_section .row_three .row_three__item img {
+    max-width: 80%;
+  }
+  .company_logo_section {
+    padding: 39px 0;
+  }
+  .input__section_main {
+    display: block !important;
+  }
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main .contact_section_bottom_left {
+    display: block;
+    width: 100%;
+  }
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main .contact_section_bottom_right {
+    display: block;
+    width: 100%;
+  }
+  .about_section {
+    background: #eaedf4;
+    padding: 0 0;
+  }
+  .about_section .about_section_main {
+    display: block;
+    width: 100% !important;
+    margin: 0;
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .protfolio_section .protfolio_contriler .controlar_inner ul li button {
+    padding: 12px 12px;
+    font-size: 0.8rem;
+  }
+  .counter_section .counter_item .counter_item_inner strong {
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main .contact_section_bottom_left {
+    padding: 0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main .contact_section_bottom_left input {
+    width: 94%;
+    display: block;
+    margin: 10px auto;
+  }
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main .contact_section_bottom_right {
+    padding: 0 !important;
+  }
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main .contact_section_bottom_right textarea {
+    width: 94%;
+    display: block;
+    margin: 10px auto;
+  }
+  nav {
+    display: none !important;
+  }
+}
+
+@media all and (max-width: 672px) {
+  .counter_section {
+    padding: 20px 0;
+  }
+  .counter_section .counter_item {
+    float: left;
+    width: 50% !important;
+    margin: 30px 0;
+  }
+  .about_section .about_section_main .about_section_left {
+    width: 84%;
+    height: 557px;
+  }
+  .contact__section_main_top {
+    display: none !important;
+  }
+  .contact__section .contact__section__main {
+    padding: 30px;
+  }
+  .about_section_right {
+    width: 100% !important;
+    padding: 20px 0 70px 0 !important;
+    margin: 0 !important;
+  }
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main .contact_section_bottom_left {
+    padding: 0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main .contact_section_bottom_left input {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+  }
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main .contact_section_bottom_right {
+    padding: 0 !important;
+  }
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main .contact_section_bottom_right textarea {
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+@media all and (max-width: 584px) {
+  .protfolio_section .protfolio_contriler .controlar_inner ul li button {
+    display: none;
+  }
+  .protfolio_section .section_title {
+    text-align: left;
+    width: 90% !important;
+    margin-bottom: 17px !important;
+  }
+  .protfolio_section {
+    padding: 74px 0;
+  }
+  .employment_section {
+    padding: 74px 0;
+  }
+  .contact__section {
+    padding: 30px 0 51px 0;
+  }
+  footer {
+    padding: 0 0 30px 0;
+  }
+  .contact__section .section_title {
+    width: 100% !important;
+  }
+}
+
+@media all and (max-width: 448px) {
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main .contact_section_bottom_left {
+    padding: 0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main .contact_section_bottom_left input {
+    width: 89%;
+    display: block;
+    margin: 10px auto;
+  }
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main .contact_section_bottom_right {
+    padding: 0 !important;
+  }
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main .contact_section_bottom_right textarea {
+    width: 89%;
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+@media all and (max-width: 370px) {
+  .skill_section .skill_section_inner .skill_item .skill_item_inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .skill_section .skill_section_inner .skill_item .skill_item_inner h3 {
+    margin-top: 15px !important;
+  }
+  .skill_section .skill_section_inner .skill_item .skill_item_inner p {
+    text-align: center !important;
+  }
+  .section_title {
+    text-align: left;
+    width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+  .section_title h2 {
+    font-size: 1.3rem !important;
+    line-height: 30px !important;
+    font-weight: 600;
+    position: relative;
+  }
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main .contact_section_bottom_left {
+    padding: 0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main .contact_section_bottom_left input {
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+  }
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main .contact_section_bottom_right {
+    padding: 0 !important;
+  }
+  .contact__section .contact__section__main .contact__section_bottom > form > .input__section_main .contact_section_bottom_right textarea {
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+  }
+  .contact__section .contact__section__main .submit_btn_div input[type='submit'] {
+    padding: 15px 40px;
+  }
+  .contact__section .contact__section__main {
+    padding: 30px;
+    margin-top: 53px;
+  }
+  .protfolio_section .protfolio_image_inner .protfolio_item .protfolio_item_inner {
+    height: 231px;
+  }
+  .protfolio_section .protfolio_image_inner {
+    margin-top: 20px;
+  }
+  .about_section .about_section_main .about_section_left {
+    width: 84%;
+    height: 350px;
+    margin: 20px 0;
+  }
+  .about_section .about_section_main .about_section_right p {
+    line-height: 20px;
+    text-align: justify;
+    font-size: .9rem;
+  }
+  .about_section .about_section_main .about_section_right ul li {
+    line-height: 25px;
+    font-size: .9rem;
+  }
+  .about_section .about_section_main .about_section_right ul li span {
+    width: 120px;
+    margin-right: 0;
+  }
+  .about_section .about_section_main .about_section_right h2 {
+    line-height: 26px;
+    margin-bottom: 7px;
+    font-size: 1.2rem;
+  }
+  .about_section .about_section_main .about_section_right a {
+    padding: 8px;
+  }
+  header .header_content {
+    height: 55vh;
+    width: 100%;
+    margin: 0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .header_content h1 {
+    font-size: 12px;
+  }
+  header .header_content img {
+    width: 167px;
+    margin-bottom: 12px;
+  }
+  header .header_content h5 {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  header .header_content a {
+    font-weight: 500;
+    padding: 5px 12px;
+    margin-top: 15px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
