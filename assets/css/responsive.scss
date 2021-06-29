@@ -78,6 +78,11 @@
 }
 //media query
 @media all and (max-width: 992px) {
+    .material-scrolltop.reveal {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
     body {
         overflow-x: hidden;
     }
@@ -144,14 +149,15 @@
         .container {
             width: 100%;
         }
+
         nav {
             position: relative !important;
             background: #ec116d;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.623);
-            padding: 10px 0;
+            padding: 10px 0 !important;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 100% !important;
             .nav_left {
                 margin-left: 30px;
                 img {
@@ -161,7 +167,7 @@
             }
             .nav_right {
                 position: absolute;
-                top: 101%;
+                top: 100%;
                 left: 0;
                 width: 100%;
                 background: #d61063;
@@ -191,6 +197,24 @@
                     }
                 }
             }
+        }
+        #nav {
+            position: fixed;
+            width: 100%;
+            left: 0;
+            padding: 3px 0;
+            -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+            z-index: 99;
+        }
+        .sticky {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: #ec116c !important;
+            padding: 0px 0 !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.493);
         }
     }
 
@@ -276,7 +300,7 @@
         font-size: 40px;
     }
     header .header_content {
-        height: 68vh;
+        height: 85vh;
     }
     .about_section .about_section_main .about_section_left {
         width: 84%;
@@ -595,12 +619,12 @@
     }
     header nav .nav_right ul li {
         padding: 9px;
-        a{
-            font-size: .9rem;
+        a {
+            font-size: 0.9rem;
         }
     }
     header .header_content {
-        height: 45vh;
+        height: 65vh;
         width: 100%;
         margin: 0 !important;
         display: flex;

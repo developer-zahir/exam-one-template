@@ -2,6 +2,16 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+body ::-moz-selection {
+  background: #ec116ca2;
+  color: #fff;
+}
+
+body ::selection {
+  background: #ec116ca2;
+  color: #fff;
+}
+
 .clear::after {
   content: '';
   clear: both;
@@ -30,7 +40,6 @@ header {
   background: #ec116d;
   margin: 0;
   padding: 0;
-  padding-top: 20px;
   background: url(../image/herobg.jpg);
   background-repeat: no-repeat;
   background-position: 100% 100%;
@@ -38,7 +47,17 @@ header {
   background-position: center center;
 }
 
-header nav {
+header #nav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  padding: 25px 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  z-index: 99;
+}
+
+header #nav nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,13 +67,15 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80%;
+  margin: auto;
 }
 
-header nav .nav_left .logo img {
+header #nav .nav_left .logo img {
   width: 90px;
 }
 
-header nav .nav_right > ul {
+header #nav .nav_right > ul {
   padding: 0;
   margin: 0;
   display: -webkit-box;
@@ -63,13 +84,13 @@ header nav .nav_right > ul {
   list-style: none;
 }
 
-header nav .nav_right > ul li {
+header #nav .nav_right > ul li {
   margin: 0 9px;
   position: relative !important;
   padding: 15px 0;
 }
 
-header nav .nav_right > ul li a {
+header #nav .nav_right > ul li a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
@@ -78,8 +99,18 @@ header nav .nav_right > ul li a {
   color: #fff;
 }
 
-header nav .nav_right > ul li a:hover {
+header #nav .nav_right > ul li a:hover {
   color: #fcc747;
+}
+
+header .sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #ec116c !important;
+  padding: 10px 0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.493);
 }
 
 header .header_content {
@@ -582,6 +613,16 @@ header .header_content a:hover {
   background: #ec116d;
   padding: 90px 0;
   overflow: auto;
+}
+
+.counter_section ::-moz-selection {
+  background: #3244e3b9;
+  color: #fff;
+}
+
+.counter_section ::selection {
+  background: #3244e3b9;
+  color: #fff;
 }
 
 .counter_section .counter_item {
@@ -1160,22 +1201,22 @@ header .header_content a:hover {
   margin-top: 10px;
 }
 
-.contact__section .contact__section__main .submit_btn_div input[type="submit"] {
+.contact__section .contact__section__main .submit_btn_div input[type='submit'] {
   background: #3243e3;
   border: 1px solid rgba(255, 255, 255, 0);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   padding: 15px 70px;
   color: #fff;
   font-weight: 500;
-  font-family: "roboto";
+  font-family: 'roboto';
   font-size: 1rem;
   letter-spacing: 1px;
   border-radius: 2px;
   margin-top: 20px;
 }
 
-.contact__section .contact__section__main .submit_btn_div input[type="submit"]:hover {
+.contact__section .contact__section__main .submit_btn_div input[type='submit']:hover {
   background: transparent;
   color: #3243e3;
   border-color: #3243e3;
@@ -1211,8 +1252,8 @@ footer ul li a {
   line-height: 35px;
   font-size: 1.1rem;
   color: #777;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   margin-bottom: 10px;
 }
 
@@ -1228,8 +1269,8 @@ footer p {
 }
 
 footer p a {
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   text-decoration: none;
   color: #888;
   display: inline-block;
