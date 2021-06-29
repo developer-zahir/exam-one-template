@@ -310,6 +310,10 @@
         border-radius: 5px;
         overflow: hidden;
     }
+    header .header_content {
+        height: 100vh;
+        width: 100%;
+    }
 }
 //media query
 @media all and (max-width: 774px) {
@@ -497,6 +501,9 @@
     .contact__section .section_title {
         width: 100% !important;
     }
+    header {
+        height: 78vh;
+    }
 }
 //media query
 @media all and (max-width: 448px) {
@@ -648,4 +655,12 @@
         padding: 5px 12px;
         margin-top: 15px;
     }
+    header {
+        height: 60vh;
+    }
 }
+header .header_content {
+    height: 100% !important;
+    width: 100% !important;
+}
+
